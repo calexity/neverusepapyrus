@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Never use Papyrus</title>
+	<meta name="description" content="A helpful website with guidelines on how to use Papyrus. Spoiler alert: it's never ok to use Papyrus.">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="quotes">
+		<div class="text quote">When should I use Papyrus?</div>
+		<div class="buttons">
+		  <a href="#" class="btn">Tell me more</a>
+		</div>
+	</div>
+
+	<script src="js/lib/jquery.min.js"></script>
+	<script>
+			var arr = [
+					 'Never',
+					 'What if I work at a restaurant?',
+					 'Not even then',
+					 'How about a spa?',
+					 'Nope',
+					 'What should I use then?',
+					 'Try Futura',
+					 'When should I use Papyrus?'
+					];
+			var cnt = 0;
+
+			$(".btn").on('click',function (e) {
+				//alert(arr[cnt]);
+				$(".text").hide();
+				$(".text").text(arr[cnt]).fadeIn(500);
+				cnt++;
+				if (cnt > 7) cnt = 0;
+			});
+	</script>
+	<script src="js/quote.js"></script>
+</body>
+</html>
