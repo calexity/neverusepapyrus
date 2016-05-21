@@ -27,15 +27,15 @@
 					 'How about a spa?',
 					 'Nope',
 					 'What should I use then?',
-					 'Try Palatino',
-					 'Maybe Mariposa Sans',
-					 'Or Fanwood can be nice',
+					 'Try <a href="https://www.myfonts.com/fonts/linotype/palatino/" target="_blank">Palatino</a>',
+					 'Maybe <a href="https://www.myfonts.com/fonts/itc/mariposa-sans/" target="_blank">Mariposa Sans</a>',
+					 'Or <a href="https://www.fontsquirrel.com/fonts/fanwood" target="_blank">Fanwood</a> can be nice',
 					 'Hey now, I\'m James Cameron!',
-					 'Try Baker Signet, Mr. Cameron',
+					 'Try <a href="https://www.myfonts.com/fonts/bitstream/baker-signet/" target="_blank">Baker Signet</a>, Mr. Cameron',
 					 'But I want it to look handwritten!',
-					 'Have you tried Escafina?',
-					 'Or Lavanderia, a solid choice!',
-					 'Montserrat can be your backup plan',
+					 'Have you tried <a href="http://www.losttype.com/font/?name=buffon" target="_blank">Buffon</a>?',
+					 'Or <a href="http://www.losttype.com/font/?name=lavanderia" target="_blank">Lavanderia</a>, a solid choice!',
+					 '<a href="https://www.google.com/fonts/specimen/Montserrat" target="_blank">Montserrat</a> can be your backup plan',
 					 'So when should I use Papyrus?'
 					];
 			var cnt = 0;
@@ -43,7 +43,7 @@
 			$(".btn").on('click',function (e) {
 				//alert(arr[cnt]);
 				$(".text").hide();
-				$(".text").text(arr[cnt]).fadeIn(500);
+				$(".text").html(arr[cnt]).fadeIn(500);
 				cnt++;
 				if (cnt > 15) cnt = 0;
 			});

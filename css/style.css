@@ -64,6 +64,16 @@ body {
   font-size: 70%;
 }
 
+.text a {
+  position: relative;
+  margin: 0;
+  font-size: 48px;
+  font-kerning: normal;
+  line-height: 1.2;
+  color: rgba(244, 61, 171, 1);
+  font-family: Baskerville, serif;
+}
+
 .btn {
   position: absolute;
   top: 65%;
@@ -83,7 +93,7 @@ body {
   box-shadow: inset 0 -6px 0 rgba(244, 61, 171, 0.3);
 }
 
-a {
+.madeby a, .buttons a {
   font-size: 16px;
   font-weight: 800;
   color: rgba(0, 0, 0, 0.7);
